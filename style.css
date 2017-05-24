@@ -13,7 +13,35 @@ Updated: 2017-04-26 19:45:22
 .carzine_single_post_content {
     margin: 5%;
 }
+
 .carzine_single_post_container .carzine_single_post_content {
-    padding:0;
+    padding: 0;
 }
 
+.home-bucket-wrap {
+
+}
+
+.home-bucket {
+
+}
+
+.home-bucket h4 {
+}
+
+.bucket .bucket-image {
+    display: block;
+    margin: 15px auto 20px;
+}
+
+.bucket .bucket-title {
+    text-align: center;
+    margin: 30px auto 20px;
+
+
+}
+
+.bucket .bucket-content {
+    text-align: justify;
+    padding: 5px 10px;
+}

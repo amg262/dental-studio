@@ -16,7 +16,7 @@ get_header(); ?>
                     <div id="carzine_main_content_container">
 
 						<?php if ( get_field( 'slider_shortcode', 'options' ) ) {
-							$data = get_field( 'slider_shortcode', 'options'  );
+							$data = get_field( 'slider_shortcode', 'options' );
 							echo do_shortcode( $data );
 						} ?>
 						<?php //get_template_part('theme_includes/featured_post_area');?>
@@ -24,12 +24,12 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="col-md-12">
-					<?php if ( have_rows( 'buckets', 'options'  ) ):
+                <div class="col-md-12 home-bucket-wrap">
+					<?php if ( have_rows( 'buckets', 'options' ) ):
 
-						$count = count( get_field( 'buckets', 'options'  ) );
+						$count = count( get_field( 'buckets', 'options' ) );
 
-						while ( have_rows( 'buckets', 'options'  ) ) : the_row();
+						while ( have_rows( 'buckets', 'options' ) ) : the_row();
 
 							// Your loop code
 							$title   = get_sub_field( 'title' );
@@ -50,18 +50,27 @@ get_header(); ?>
 							//$link    = get_sub_field( 'link' ); ?>
 
 
-                            <div class="<?php _e( $col, 'dental-studio' ); ?>">
-                                <h4>
-									<?php echo $count;//_e( $content, 'dental-studio' ); ?>
+                            <div class="bucket <?php _e( $col, 'dental-studio' ); ?> ">
+                                <div class="bucket-title">
+                                    <a href="<?php echo get_sub_field( 'url' ); ?>">
+                                         <img src="<?php _e( $image['url'], 'dental-studio' ); ?>"
+                                              alt="<?php _e( $image['alt'], 'dental-studio' ); ?>"
+                                              class="bucket-image" width="128" height="128"
+                                         />
+                                        <h1>
+                                            <strong>
+                                                <?php echo get_sub_field( 'title' ); ?>
+                                            </strong>
+                                        </h1>
+                                    </a>
+                                </div>
 
-                                </h4>
-                                <p>
-                                    <img src="<?php _e( $image['url'], 'dental-studio' ); ?>"
-                                         alt="<?php _e( $image['alt'], 'dental-studio' ); ?>"
-                                         width="128" height="128"/>
+
+                                <div class="bucket-content">
+
 
 									<?php _e( $content, 'dental-studio' ); ?>
-                                </p>
+                                </div>
                             </div>
 
 						<?php endwhile;
