@@ -15,8 +15,8 @@ get_header(); ?>
                 <div class="col-md-12">
                     <div id="carzine_main_content_container">
 
-						<?php if ( get_field( 'slider_shortcode' ) ) {
-							$data = get_field( 'slider_shortcode' );
+						<?php if ( get_field( 'slider_shortcode', 'options' ) ) {
+							$data = get_field( 'slider_shortcode', 'options'  );
 							echo do_shortcode( $data );
 						} ?>
 						<?php //get_template_part('theme_includes/featured_post_area');?>
@@ -25,11 +25,11 @@ get_header(); ?>
                 </div>
 
                 <div class="col-md-12">
-					<?php if ( have_rows( 'buckets' ) ):
+					<?php if ( have_rows( 'buckets', 'options'  ) ):
 
-						$count = count( get_field( 'buckets' ) );
+						$count = count( get_field( 'buckets', 'options'  ) );
 
-						while ( have_rows( 'buckets' ) ) : the_row();
+						while ( have_rows( 'buckets', 'options'  ) ) : the_row();
 
 							// Your loop code
 							$title   = get_sub_field( 'title' );
