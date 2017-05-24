@@ -45,6 +45,11 @@ Updated: 2017-04-26 19:45:22
     padding: 5px 10px;
 }
 
+.container #carzine_description {
+    font-size: 1.2em !important;
+    margin: 10px auto;
+}
+
 /********************************/
 
 .spin90-right {
