@@ -49,7 +49,9 @@ Updated: 2017-04-26 19:45:22
     font-size: 1.2em !important;
     margin: 10px auto;
 }
-
+.carzine_single_post_content > div#StylizedImage {
+    display: none !important;
+}
 /********************************/
 
 .spin90-right {
