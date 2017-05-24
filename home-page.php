@@ -51,11 +51,11 @@ get_header(); ?>
 
 
                             <div class="bucket <?php _e( $col, 'dental-studio' ); ?> ">
-                                <div class="bucket-title">
+                                <div class="bucket-title raisey">
                                     <a href="<?php echo get_sub_field( 'url' ); ?>">
                                          <img src="<?php _e( $image['url'], 'dental-studio' ); ?>"
                                               alt="<?php _e( $image['alt'], 'dental-studio' ); ?>"
-                                              class="bucket-image" width="128" height="128"
+                                              class="bucket-image spin90-right" width="128" height="128"
                                          />
                                         <h1>
                                             <strong>
