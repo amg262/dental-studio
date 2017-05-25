@@ -4,10 +4,10 @@ get_header();?>
 <div id="carzine_main_content_area">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <div id="breadcrumbs_and_title">
                  <h1><a title="<?php the_title_attribute();?>" href="<?php the_permalink();?>"><?php the_title();?></a></h1>
-                 
+
                  <?php carzine_the_breadcrumb(); ?>
                 </div>
             </div>

@@ -10,11 +10,13 @@
  */
 get_header(); ?>
     <div id="carzine_main_content_area">
-        <div class="header-slider">
-			<?php if ( get_field( 'slider_shortcode', 'options' ) ) {
-				$data = get_field( 'slider_shortcode', 'options' );
+        <div class="row header-slider-wrap">
+            <div class="header-slider">
+			<?php if ( get_field( 'full_slider_shortcode', 'options' ) ) {
+				$data = get_field( 'full_slider_shortcode', 'options' );
 				echo do_shortcode( $data );
 			} ?>
+            </div>
         </div>
 
         <div class="container">
@@ -22,8 +24,8 @@ get_header(); ?>
                 <div class="col-md-12">
                     <div id="carzine_main_content_container">
 
-						<?php if ( get_field( 'slider_shortcode', 'options' ) ) {
-							$data = get_field( 'slider_shortcode', 'options' );
+						<?php if ( get_field( 'main_slider_shortcode', 'options' ) ) {
+							$data = get_field( 'main_slider_shortcode', 'options' );
 							echo do_shortcode( $data );
 						} ?>
 						<?php //get_template_part('theme_includes/featured_post_area');?>
