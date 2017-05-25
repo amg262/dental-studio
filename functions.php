@@ -15,12 +15,7 @@ if ( ! function_exists( 'chld_thm_cfg_parent_css' ) ):
 			'slicknav',
 			'foundation-icons',
 		] );
-		wp_enqueue_style( 'style_css', get_theme_root_uri() . 'style.css', [
-			'bootstrap',
-			'bootstrap-theme',
-			'slicknav',
-			'foundation-icons',
-		] );
+
 	}
 endif;
 

@@ -26,6 +26,7 @@ Updated: 2017-04-26 19:45:22
     margin: 0 auto;
     display: block;
 }
+
 .carzine_single_post_container .carzine_single_post_content {
     padding: 0;
 }
@@ -47,19 +48,23 @@ Updated: 2017-04-26 19:45:22
 
 .bucket .bucket-image {
     display: block;
-    margin: 15px auto 30px;
+    margin: 5px auto;
 }
 
 .bucket-title,
 .bucket-title h1, .bucket-title a {
     display: block !important;
     text-align: center !important;
-    margin: 40px auto 15px;
-    font-size: 1.4em !important;
+    margin: 15px auto;
+    font-size: 1.2em !important;
+    letter-spacing: 1px;
+}
+
+.bucket-title h1:hover {
+    color: white;
 }
 
 .bucket .bucket-content {
-    text-align: justify;
     padding: 5px 10px;
 }
 
