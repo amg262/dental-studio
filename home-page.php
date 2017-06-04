@@ -4,10 +4,8 @@
  ***********************************************/
 
 /*
-
  * Template Name: Homepage
-
- */
+*/
 get_header(); ?>
     <div id="carzine_main_content_area">
         <div class="row header-slider-wrap">
@@ -58,7 +56,7 @@ get_header(); ?>
                                     <a href="<?php echo get_sub_field( 'url' ); ?>">
                                         <img src="<?php _e( $image['url'], 'dental-studio' ); ?>"
                                              alt="<?php _e( $image['alt'], 'dental-studio' ); ?>"
-                                             class="bucket-image spin90-right" width="80" height="80"
+                                             class="bucket-image spin90-right" width="100" height="100"
                                         />
                                         <h1>
                                             <strong>
