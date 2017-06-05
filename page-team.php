@@ -16,16 +16,18 @@ get_header(); ?>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <div id="carzine_main_content_container">
                         <?php get_template_part('theme_includes/team_page_area'); ?>
                     </div>
                 </div>
-            </div>
+
             <div class="col-md-3">
                 <div id="carzine_sidebar_container">
-                    <?php get_sidebar(); ?>
+                    <?php //get_sidebar(); ?>
+                    <?php //get_sidebar(); ?>
                 </div>
+            </div>
             </div>
         </div>
     </div>

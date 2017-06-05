@@ -32,19 +32,21 @@
                                 ?>
 
 
-                                <div>
+                        <div style="margin:10px;display: inline-block">
                                     <img src="<?php _e($image['url'], 'dental-studio'); ?>"
                                          alt="<?php _e($image['alt'], 'dental-studio'); ?>"
-                                         class="" width="100" height="100"
-                                         style="float:left;"
+                                         class="" width="256" height="256"
+                                         style="float:left;margin:0 30px 30px;"
                                     />
-                                    <h4 style="display: inline;">
-                                        <?php echo get_sub_field('name'); ?>
-                                    </h4>
-                                    <p>
-                                        <?php echo get_sub_field('bio'); ?>
+                            <div style="display:inline; margin:20px;">
 
-                                    </p>
+                                        <h2 style="color:#06a2d6;display: inline;">
+                                            <?php echo get_sub_field('name'); ?>
+                                        </h2>
+                                            <?php echo get_sub_field('bio'); ?>
+
+
+                            </div>
                                 </div>
                                 <?php
 
